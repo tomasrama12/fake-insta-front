@@ -1,0 +1,25 @@
+<div class="fullPage" *ngIf="isDisplaying">
+    <div class="header mt-3 fi-text border-bottom">
+        <h5>{{this.user?.name}}</h5>
+    </div>
+    <div class="mx-3">
+        <app-message-grid [user]="this.user"></app-message-grid>
+    </div>
+    <div class="back"></div>
+</div>  
+
+<!-- 
+------------------------------Clases------------------------------
+
+
+fullPage = Especificado en el scss local. Regula cosas respecto al aspecto de la pantalla.
+
+header = Especificado en el scss global. Regula cosas respecto al tamaño del elemento.
+
+mt-{valor} = Establece un margen superior.
+
+fi-text = Especificado en el scss global, regula cosas respecto al estilo del texto.
+
+border-bottom = Establece un borde solido en la parte inferior del elemento.
+
+-->

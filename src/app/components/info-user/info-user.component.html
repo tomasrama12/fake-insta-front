@@ -1,0 +1,50 @@
+<div class="container user-info">
+    <div class="row gx-2 pt-3">
+        <div class="col-auto">
+            <div class="user-info-icon">
+                <app-user-icon  [user]="user"></app-user-icon>
+            </div>
+            </div>
+            <div class="col">
+                <a routerLink="/profile/{{user.username}}" class="text-decoration-none">
+                    <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>
+                </a>
+                <p class="fi-user-name {{colorScheme}}">@{{user.username}}</p>
+            </div>
+    </div>
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+********************************************************************************************************
+container = se utiliza para contener o rellernar contenido dentro de ellos. En este caso "container" solo establece
+            un max-width determinado en cada punto de interupcion determinado. "container-fluid" hace un max-with: 100% en todos los 
+            puntos de interupcion, y "container-{breakpoint}" seria una mexca de estos dos ultimos.
+
+user-info = especificado en el scss local.  Maneja la altura maxima del componente
+
+********************************************************************************************************
+row = crea una fila
+
+gx-{valor} = se crea un espacio a izquierda y derecha, en el eje de las x entre las columnas.
+
+pt-{valor} = establece un espacio de relleno en la parte superior de la fila.
+
+********************************************************************************************************
+
+col = pone columnas, hay un maximo de 12.
+
+col-auto = es una columna que se auto redimensiona dependiendo del contenido.
+
+********************************************************************************************************
+text-decoration-none = remueve la decoracion del texto, en este caso del link.
+
+user-info-icon = especificado en el scss global. Regula cosas relativa al tamaño del contenido.
+
+fi-user = especificado en el scss local.  Arregla bien cosas referentes al texto.
+
+fi-user-name = especificado en el scss local.  Arregla bien cosas referentes al texto.
+
+-->

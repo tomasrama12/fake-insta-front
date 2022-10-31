@@ -1,0 +1,48 @@
+<div class="mt-1 border-top desk">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/discoverPage" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <i class="bi bi-house"></i>
+            </a>
+            <a class="navbar-brand" routerLink="/search">
+                <i class="bi bi-search"></i>
+            </a>
+            <a class="navbar-brand" routerLink="/uploadPhoto">
+                <app-upload-button [text]="'+'"></app-upload-button>
+            </a>
+            <a class="navbar-brand" routerLink="/chats">
+                <i class="bi bi-chat"></i>
+            </a>
+            <a class="navbar-brand" routerLink="/profile">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<!-- 
+------------------------------Clases------------------------------
+
+********************************************************************************************************
+
+mt-{valor} = especifica el margen superior.
+
+border-top = agrega un borde superior.
+
+********************************************************************************************************
+
+navbar = crea una barra de navegacion estandar.
+
+********************************************************************************************************
+
+container-fluid = se utiliza para contener o rellernar contenido dentro de ellos. En este caso "container-fluid" hace un max-with: 100% en todos los 
+                    puntos de interupcion.
+
+********************************************************************************************************
+
+navbar-brand = se usa para el titulo o logo de la navbar, en este caso se usa en todas porque se quiere dar la misma importancia/enfasis en todos los botones.
+
+Las clases bi {nombre} se usan para los iconos.
+
+-->
+

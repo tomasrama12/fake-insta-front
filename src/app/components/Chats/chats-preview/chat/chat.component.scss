@@ -1,0 +1,25 @@
+.border-top {
+
+    width: 100vw; //Especifica la anchura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                // (vh esta asociado a la altura de la pantalla del usuario, 100, equivale a maximo el 100% de la altura de la pantalla del usuario).
+}
+
+.fi-name{
+    
+    font-family: 'Roboto'; //Especifica una lista de fuentes o familia de fuentes para utilizar en el elemento.
+    
+    font-weight: 700; //Establece el grueso de los caracteres, el 700 creo que seria bold.
+    
+    font-size: 13px; //Especifica el tamaño de la letra.
+    
+    line-height: 18px; //Se utiliza para establcer la distancia entre lineas de texto.
+}
+
+.fi-message {
+    
+    font-family: 'Roboto'; //Especifica una lista de fuentes o familia de fuentes para utilizar en el elemento.
+    
+    font-size: 13px; //Especifica el tamaño de la letra.
+    
+    line-height: 18px; //Se utiliza para establcer la distancia entre lineas de texto.
+}

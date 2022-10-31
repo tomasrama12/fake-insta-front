@@ -1,0 +1,17 @@
+<div class="container">
+    <app-chat-message [message]="{message:'hola como estas', type:'send'}" [user]="user"></app-chat-message>
+    <app-chat-message [message]="{message:'hola como estas!!!', type:'send'}" [user]="user"></app-chat-message>
+    <app-chat-message [message]="{message:'Todo bien, vos?', type:'recibe'}" [user]="user"></app-chat-message>
+    <app-chat-message [message]="{message:'Bien tambien', type:'send'}" [user]="user"></app-chat-message>
+    <app-chat-message [message]="{message:'Mira vos, no me interesa banana pelada', type:'recibe'}" [user]="user"></app-chat-message>
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+container = se utiliza para contener o rellernar contenido dentro de ellos. En este caso "container" solo establece
+            un max-width determinado en cada punto de interupcion determinado. "container-fluid" hace un max-with: 100% en todos los 
+            puntos de interupcion, y "container-{breakpoint}" seria una mexca de estos dos ultimos.
+
+-->

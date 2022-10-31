@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-10 text-light my-1 sended" *ngIf="getMessageType == 'send'">
+        <div class="size">
+            <p>{{message?.message}}</p>
+        </div>
+    </div>
+    <div class="col-auto p-0 mb-1">
+        <div class="message-icon">
+            <app-user-icon [user]="user"></app-user-icon>
+        </div>
+    </div>
+    <div class="col-10 text-light my-1" *ngIf="getMessageType == 'recibe'">
+        <div class="size">
+            <p>{{message?.message}}</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+row = Especifica una fila.
+
+col-10 = Especifica una columna de tamaño 10 de 12.
+
+text-light = Pone el texto como italica (creo)
+
+my-{valor} =  Etsablece un margen en el eje de las y.
+
+sended = Especificado en el scss local. Arrgla cosas respecto a la vista del mensaje.
+
+size = Especificado en el scss local. Arrgla cosas respecto a la vista del mensaje.
+
+col-auto = es una columna que se auto redimensiona dependiendo del contenido.
+
+p-{valor} = Establece un área de rellono/padding.
+
+mb-{valor} = Establece un margen inferior.
+
+-->

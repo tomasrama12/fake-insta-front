@@ -1,0 +1,46 @@
+.fi-follow-button {
+    
+    border-radius: 6px;
+    
+    width: 100%; //Especifica el ancho del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 3.5rem; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                    //(la unidad "rem" signifixa que es relativo al tamaño del elemento raiz)
+
+    border: 2px solid #000000;  //Permite definir reglas para el estilo del borde del elemento.
+    
+    font-family: 'Roboto'; //Especifica una lista de fuentes o familia de fuentes para utilizar en el elemento.
+    
+    font-weight: 700; //Establece el grueso de los caracteres, el 700 creo que seria bold.
+     
+    font-size: 0.8rem; //Especifica el tamaño de la letra. (la unidad "rem" signifixa que es relativo al tamaño del elemento raiz)
+    
+    line-height: 15px; //Se utiliza para establcer la distancia entre lineas de texto.
+    
+    letter-spacing: 0.04em; //Estable el espacio horizontal entre los carcateres. (la unidad em significa que es relativo al tamaño de su propio elemento)
+    
+    text-transform: uppercase; //Especifica el cambio entre mayusculas y minusculas del texto de un elemento.
+
+    &.dark {
+        
+        background: #000000; //Establece el fondo del elemento.
+        
+        color: white; //Especifica el color del contenido.
+    }
+}
+
+.fi-follow-button:active {
+    
+    background: #181818; //Establece el fondo del elemento.
+    
+    color: white; //Especifica el color del contenido.
+
+    &.dark {
+        
+        background: rgb(233, 232, 232); //Establece el fondo del elemento.
+        
+        color: black; //Especifica el color del contenido.
+    }
+
+}

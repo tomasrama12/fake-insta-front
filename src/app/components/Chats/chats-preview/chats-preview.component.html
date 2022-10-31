@@ -1,0 +1,28 @@
+<div class="header mt-3 fi-text">
+    <h5>Chats</h5>
+</div>
+<div class="container">
+    <div *ngFor="let chat of this.users; let i = index">
+        <app-chat [putBorderBottom]="this.users.length - 1 == i" (click)="openChat(chat)" [user]="chat"></app-chat> 
+    </div>
+    <div class="py-5"></div>
+</div>
+<app-chat-message-vuew #hiddenElement></app-chat-message-vuew>
+
+<!-- 
+------------------------------Clases------------------------------
+
+header =  Especificado en el scss global. Estiliza el contenedor del texto.
+
+mt-{valor} = Establece un margen superior.
+
+fi-text = Especificado en el scss global. Estiliza el texto.
+
+********************************************************************************************************
+container = se utiliza para contener o rellernar contenido dentro de ellos. En este caso "container" solo establece
+            un max-width determinado en cada punto de interupcion determinado. "container-fluid" hace un max-with: 100% en todos los 
+            puntos de interupcion, y "container-{breakpoint}" seria una mexca de estos dos ultimos.
+
+py-{valor} = Establece un espacio de relleno en el eje y (arriba y abajo) del elemento.
+
+-->

@@ -1,0 +1,21 @@
+
+.fi-post-image {
+    
+    width: 100%; //Especifica el ancho del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 100%;//Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemento. (Seria el 100% de la altura de dicho bloque).
+    
+    object-fit: cover; //Indica como el contenido de la "<img>" deberia redimensionarse para ajustarse al contenedor.
+                        //cover indica que el contenido (imagen) se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento.
+}
+
+.post-image-cropper {
+    
+    width: 100%; //Especifica el ancho del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 50vh; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                // (vh esta asociado a la altura de la pantalla del usuario, 50, equivale a maximo el 50% de la altura de la pantalla del usuario).
+}

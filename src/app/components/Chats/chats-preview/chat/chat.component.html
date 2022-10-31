@@ -1,0 +1,44 @@
+<div class="row gx-2 py-3 border-top  {{putBorderBottom ? 'border-bottom' : ''}}">
+    <div class="col-auto ms-3">
+        <div class="user-chat-icon">
+            <app-user-icon [user]="this.user"></app-user-icon>
+        </div>
+    </div>
+    <div class="col">
+        <h6 class="fi-name my-1">{{this.user.name}}</h6>
+        <p class="fi-message">Gracias por ayudarme</p>
+    </div>
+</div>
+
+<!-- 
+------------------------------Clases------------------------------
+
+row = crea una fila
+
+gx-{valor} = se crea un espacio a izquierda y derecha, en el eje de las x entre las columnas.
+
+pt-{valor} = establece un espacio de relleno en la parte superior de la fila.
+
+border-top = Pone un margen superior al elemento.
+
+border-bottom = Pone un margen inferior al elemento.
+
+********************************************************************************************************
+
+col = pone columnas, hay un maximo de 12.
+
+col-auto = es una columna que se auto redimensiona dependiendo del contenido.
+
+ms-{valor} = establece un margen al inicio (parte izquierda) del elemento.
+
+********************************************************************************************************
+
+user-chat-icon = especificado en el scss global. Regula cosas relativa al tamaño del contenido.
+
+fi-name = especificado en el scss local.  Arregla bien cosas referentes al texto.
+
+my-{valor} = Establece un margen en el eje de las y del elemento.
+
+fi-message = especificado en el scss local.  Arregla bien cosas referentes al texto.
+
+-->

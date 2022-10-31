@@ -1,0 +1,66 @@
+.full-sized-image {
+    
+    z-index: 9999; //Establece el orden de pronfundidad de un elemento. (menos valor menos profundo)
+    
+    position: fixed; //Especifica como un elemento es posicionado en el doucmento.
+                //fixed lo que hace es que posiciona al elemento teniendo en cuenta la pantalla que se esta viendo, como bloque contenedor.
+
+    
+    width: 100vw; //Especifica la anchura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                    // (vh esta asociado a la altura de la pantalla del usuario, 100, equivale a maximo el 100% de la altura de la pantalla del usuario).
+    height: 100vh; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                    // (vh esta asociado a la altura de la pantalla del usuario, 100, equivale a maximo el 100% de la altura de la pantalla del usuario).
+    
+    top: 0; //Especifica la posicion vertical de un elemento "posicionado".
+    
+    left: 0; //Especifica la posicion horizontal de un elemento "posicionado".
+
+}
+
+.bg-image {
+    
+    position: absolute; //Especifica como un elemento esta posicionado en el documento.
+                        //absolute lo que hace es remover el elemento del flujo normal del documento,
+                        //se posiciona relativo respecto a su ancestro poicionado mas cercano, si no hay, seria respecto al bloque contenedor incial.
+    
+    width: 100%; //Especifica la anchura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 100%; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la altura de dicho bloque).
+    
+    z-index: 0; //Establece el orden de pronfundidad de un elemento. (menos valor menos profundo)
+}
+
+.user-info-front {
+    
+    width: 100%; //Especifica la anchura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    position: absolute;//Especifica como un elemento esta posicionado en el documento.
+                        //absolute lo que hace es remover el elemento del flujo normal del documento,
+                        //se posiciona relativo respecto a su ancestro poicionado mas cercano, si no hay, seria respecto al bloque contenedor incial.
+
+    z-index: 2;   //Establece el orden de pronfundidad de un elemento. (menos valor menos profundo)
+}
+
+.gradient {
+    
+    width: 100%; //Especifica la anchura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 37vh; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                    // (vh esta asociado a la altura de la pantalla del usuario, 37, equivale a maximo el 37% de la altura de la pantalla del usuario).
+    
+    z-index: 1; //Establece el orden de pronfundidad de un elemento. (menos valor menos profundo)
+
+    background: linear-gradient(179.47deg, #000000 0.45%, rgba(196, 196, 196, 0) 99.55%); //Establece el fondo del elemento.
+
+}
+
+.btn-close {
+    
+    margin-left: auto; //Especifica el margen izquierdo de un elemento.
+                        //auto lo que hace es que el margen horizonta recibe una parte del espacio horizontal no utilizado.
+}
+

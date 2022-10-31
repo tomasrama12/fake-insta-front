@@ -1,0 +1,42 @@
+<app-user-icon class="d-flex justify-content-center pt-5 pb-4" [user]="user"></app-user-icon>
+<app-section-heading class="d-flex justify-content-center" [text]="user.name"></app-section-heading>
+<p class="fi-subtitle mx-auto pt-3">{{user.city}}, {{user.state}}</p>
+<div class="d-flex justify-content-center pt-4">
+  <button class="fi-follow-button dark" (click)="updateFollowStatus()">{{followText}} {{user.name}}</button>
+</div>
+<div class="d-flex justify-content-center pt-3">
+  <a class="w-100" routerLink="/chat">
+    <button class="fi-follow-button">Message</button>
+  </a>
+</div>
+
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+d-flex = Hace lo mismo que el "display: flex" del scss.
+
+justify-content-center = Hace lo mismo que el "justify-content: center" del scss.
+
+pt-{valor} = Especifica el padding/relleno superior.
+
+pb-{valor} = Especifica el padding/relleno inferior.
+
+********************************************************************************************************
+
+fi-subtitle = especificado en el scss global. Regula cosas respecto al estilo del texto
+
+mx-auto = Pone el margen izquierdo y derecho al elemento como auto.
+
+********************************************************************************************************
+
+fi-follow-button = Especificado en el scss local. Rgeula cosas sobre la vista del boton.
+
+dark = Especificado en el scss local. Rgeula cosas sobre el color del elemento.
+
+********************************************************************************************************
+
+w-100 =
+
+-->

@@ -1,0 +1,8 @@
+.fi-image {
+
+    width: 100%; //Especifica el ancho del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la anchura de dicho bloque).
+    
+    height: 100%; //Especifica la altura del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+                //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la altura de dicho bloque).
+}

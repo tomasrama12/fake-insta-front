@@ -1,0 +1,36 @@
+.fi-user {
+    font-family: 'Roboto-Regular'; //Especifica una lista de fuentes o familia de fuentes para utilizar en el elemento.
+
+    font-weight: 700; //Establece el grueso de los caracteres, el 700 creo que seria bold.
+    
+    font-size: 0.8rem; //Especifica el tamaño de la letra. (la unidad "rem" signifixa que es relativo al tamaño del elemento raiz)
+
+    margin-bottom: 0; //Especifica el margen en la parte inferior de un elemento. En este caso no hay.
+
+    &.light {
+        color: black; //Especifica el color del contenido.
+    }
+    &.dark {
+        color: white; //Especifica el color del contenido.
+    }
+  }
+
+.fi-user-name {
+
+    font-family: 'Roboto-Regular'; //Especifica una lista de fuentes o familia de fuentes para utilizar en el elemento.
+
+    font-size: 0.7rem; //Especifica el tamaño de la letra. (la unidad "rem" signifixa que es relativo al tamaño del elemento raiz)
+    
+    line-height: 13px; //Se utiliza para establcer la distancia entre lineas de texto.
+    &.light {
+        color: rgba(0, 0, 0, 0.8);  //Especifica el color del contenido.
+    }
+    &.dark {
+        color: rgba(255, 255, 255, 0.8);  //Especifica el color del contenido.
+    }
+}
+
+.user-info {
+    max-height: 10vh; //Especifica la altura maxima de un elemento. El elemento no podra sobrepasar dicha altura.
+                        // (vh esta asociado a la altura de la pantalla del usuario, 10, equivale a maximo el 10% de la altura de la pantalla del usuario).
+}

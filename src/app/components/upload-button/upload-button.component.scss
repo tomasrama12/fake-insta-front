@@ -1,0 +1,27 @@
+.fi-button {
+    
+    display: inline-block; //Establece si un elemento se trata como elemento de bloque o en linea.
+                            //inline-block hace que el
+    
+    text-align: center; //Establece la aliniacion horizontal del contenido.
+    
+    width: 70px; //Especifica el ancho del area de contendio del elemento. (es lo que esta dentro del margin, padding, etc).
+    
+    color: #fff; //Especifica el color del contenido.
+    
+    margin: auto; //establece el area de margen del elemento.
+                //con el valor auto, el navegador selecciona un margen adecuado para usar.
+    
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%); //Establece el fondo del elemento.
+    
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25); //Agrega efectos de sombra alrededor del marco de un elemento.
+}
+
+
+/*p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}*/

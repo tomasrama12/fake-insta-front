@@ -1,0 +1,31 @@
+<div class="w-100 pt-4">
+    <div class="row gx-2 gy-2 w-100">
+        <app-post-image *ngFor="let post of posts"
+        class="col-6 img-max-size"       
+        [image]="post.postImg"
+        [user]="post.user"></app-post-image>
+    </div>
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+w-100 =
+
+pt-{valor} = Establece un paddin/relleno en la parte superior del elemento.
+
+********************************************************************************************************
+row = se crea una fila.
+
+gx-{valor} = se crea un espacio a izquierda y derecha, en el eje de las x entre las columnas.
+
+gy-{valor} = 
+
+********************************************************************************************************
+
+col-6 =
+
+img-max-size = Especificado en el scss local. Regula cosas respecto al tamaño maximo de la imagen.
+
+-->

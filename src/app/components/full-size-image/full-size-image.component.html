@@ -1,0 +1,47 @@
+<div class="full-sized-image" *ngIf="isDisplaying">
+    <div class="gradient position-fixed"></div>
+    <div class="mx-2 my-4 user-info-front d-flex">
+        <app-info-user *ngIf="user" [user]="user" [isDarkMode]="true"></app-info-user>
+        <button type="button" class="btn-close btn-close-white me-4 ms-auto align-self-center" (click)="hide()"></button>
+    </div>
+    <img class="bg-image" src="{{image.url}}" alt="{{image.altText}}">
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+full-sized-image = Especificado en el scss local. Regula aspectos para que la imagen se vea bien.
+
+********************************************************************************************************
+
+gradient =  Especificado en el scss lcoal. Regula aspecto para que encima de la imagen se vea mas oscurito.
+
+position-fixed = Clase para poner un position-fixed de forma rapida.
+
+********************************************************************************************************
+
+mx-{valor} = Especifica un margen en el eje de la x del elemento.
+
+my-{valor} = Especifica un margen en el eje de la y del elemento.
+
+user-info-front = Especificado en el scss local. Regula que los elementos se vean bien y en el lugar correcto.
+
+d-flex = Hace lo mismo que el "display: flex" del scss.
+
+********************************************************************************************************
+
+btn-close = Especificado en el scss local. Regula que el boton se vea bien.
+
+btn-close-white =  Pone el boton con forma de cruz en color blanco.
+
+me-{valor} = establece un margen "al final" del elemento, en el lado derecho.
+
+ms-auto = pone el margen de inicio como auto.
+
+align-self-center = alinea el elemento en el centro.
+
+********************************************************************************************************
+
+bg-image = Especificado en el scss local. Regula que la imagen completa se vea bien.
+-->

@@ -1,0 +1,20 @@
+<div class="mx-3">
+    <app-section-heading [classes]="'pt-5 pb-4 mb-2'" [text]="'Search'"></app-section-heading>
+    <app-search-bar (searchInputEvent)="getSearchedImg($event)"></app-search-bar>
+    <p *ngIf="searchresult">ALL RESULTS</p>
+    <app-search-page-grid [posts]="posts"></app-search-page-grid>
+</div>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+mx-{valor} =
+
+pt-{valor} =
+
+pb-{valor} =
+
+mb-{valor} =
+
+-->

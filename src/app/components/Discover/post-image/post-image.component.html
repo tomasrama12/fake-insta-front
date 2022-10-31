@@ -1,0 +1,15 @@
+<div class="post-image-cropper">
+    <img class="fi-post-image" src="{{image.url}}" alt="{{image.altText}}" (click)="openImage()">
+</div>
+<app-full-size-image #hiddenElement [image]="image" [user]="user"></app-full-size-image>
+
+
+<!-- 
+------------------------------Clases------------------------------
+
+post-image-cropper = especificada en el scss local. Regula el tamaño que tendra el contenedor de la imagen.
+
+fi-post-image = especificada en el scss local. Regula que la imagen se vea bien en su contenedor, con buena relacion de 
+                aspecto,etc.
+
+-->
