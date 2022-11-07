@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'discoverPage', pathMatch: 'full'},
   {path: 'uploadPhoto', component:UploadPageComponent},
   {path: 'discoverPage', component:DiscoverPageComponent},
-  {path: 'chats', component: ChatsPreviewComponent},
+  {path: 'chats/:currentUserId', component: ChatsPreviewComponent},
   {path: 'profile', component: ProfilePageComponent},
   {path: 'search', component: SearchPageComponent},
   {path: 'profile/:username', component: ProfilePageComponent}

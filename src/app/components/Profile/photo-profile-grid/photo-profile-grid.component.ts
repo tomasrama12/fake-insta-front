@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Post } from 'src/app/Interfaces/Post';
 import { User } from 'src/app/Interfaces/User';
-import { ProfileService } from 'src/app/Service/profile.service';
+import { PostService } from 'src/app/Service/post.service';
 
 @Component({
   selector: 'app-photo-profile-grid',
@@ -13,13 +13,11 @@ export class PhotoProfileGridComponent implements OnInit {
   @Input() user!: User;
   posts: Post[] = [];
 
-  constructor(private profileService: ProfileService) { }
+  constructor(private postsService: PostService) { }
 
   ngOnInit(): void {
-    this.profileService.getPostsByUserId(this.user.username)
-    .subscribe(posts => {
-      this.posts = posts;
-    });
+    let postsIds = this.user.postsId;
+    postsIds.forEach(postId => this.postsService.getPostById(postId).subscribe(post => this.posts.push(post)));
   }
 
 }

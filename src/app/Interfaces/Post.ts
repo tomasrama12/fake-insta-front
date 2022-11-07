@@ -3,7 +3,7 @@ import { User } from "./User";
 
 export interface Post {
     id: string,
-    user: User,
+    userId: string,
     postImg: PostImg,
     tags?: string[]
 }

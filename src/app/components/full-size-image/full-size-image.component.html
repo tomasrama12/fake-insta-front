@@ -1,7 +1,7 @@
 <div class="full-sized-image" *ngIf="isDisplaying">
     <div class="gradient position-fixed"></div>
     <div class="mx-2 my-4 user-info-front d-flex">
-        <app-info-user *ngIf="user" [user]="user" [isDarkMode]="true"></app-info-user>
+        <app-info-user *ngIf="user" [userId]="user.id" [isDarkMode]="true"></app-info-user>
         <button type="button" class="btn-close btn-close-white me-4 ms-auto align-self-center" (click)="hide()"></button>
     </div>
     <img class="bg-image" src="{{image.url}}" alt="{{image.altText}}">

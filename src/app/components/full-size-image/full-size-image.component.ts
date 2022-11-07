@@ -28,6 +28,7 @@ export class FullSizeImageComponent implements OnInit {
   isDisplaying: boolean = false;
 
   ngOnInit(): void {
+    console.log(this.user);
   }
 
   show(): void {

@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { filter, Observable } from 'rxjs';
 import { Post } from '../Interfaces/Post';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ImageService {
+export class PostService {
 
   constructor(private http: HttpClient) { }
 
@@ -18,4 +19,10 @@ export class ImageService {
   getArrayOfSearchedImgs(value: string): Observable<Post[]> {
     return this.http.get<Post[]>(this.imgsUrl + `?tags=${value}`);
   }
+
+  getPostById(postId: string){
+    return this.http.get<Post>(this.imgsUrl + `/${postId}`);
+  }
+
+  
 }

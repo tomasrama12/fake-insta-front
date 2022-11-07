@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Post } from 'src/app/Interfaces/Post';
 import { User } from 'src/app/Interfaces/User';
-import { ProfileService } from 'src/app/Service/profile.service';
 
 @Component({
   selector: 'app-search-page-grid',

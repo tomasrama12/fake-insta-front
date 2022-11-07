@@ -1,4 +1,4 @@
-<div class="m-3">
+<div class="m-3" *ngIf="user">
     <app-profile-header [user]="user" class="user-profile-icon"></app-profile-header>
     <app-photo-profile-grid [user]="user"></app-photo-profile-grid>
 </div>

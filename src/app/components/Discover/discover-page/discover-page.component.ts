@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/Interfaces/Post';
-import { ImageService } from 'src/app/Service/image.service';
+import { PostService } from 'src/app/Service/post.service';
 
 @Component({
   selector: 'app-discover-page',
@@ -11,12 +11,12 @@ export class DiscoverPageComponent implements OnInit {
 
   posts: Post[] = [];
 
-  constructor(private discoverImgsService: ImageService) { }
+  constructor(private postsService: PostService) { }
 
   ngOnInit(): void {
-    this.discoverImgsService.getArrayOfImgs()
-    .subscribe(imgs => {
-      this.posts = imgs;
+    this.postsService.getArrayOfImgs()
+    .subscribe(posts => {
+      this.posts = posts;
     });
   }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/Interfaces/Post';
-import { ImageService } from 'src/app/Service/image.service';
+import { PostService } from 'src/app/Service/post.service';
 
 @Component({
   selector: 'app-search-page',
@@ -14,7 +14,7 @@ export class SearchPageComponent implements OnInit {
 
   posts: Post[] = [];
   //postimg: PostImg[] = [];
-  constructor(private discoverImgsService: ImageService) { }
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
     this.searchresult = false;
@@ -23,9 +23,9 @@ export class SearchPageComponent implements OnInit {
   getSearchedImg(searchinput: string): void {
     this.searchresult = true;
     if (searchinput == '') {
-      this.discoverImgsService.getArrayOfImgs().subscribe(posts => this.posts = posts);
+      this.postService.getArrayOfImgs().subscribe(posts => this.posts = posts);
     } else {
-      this.discoverImgsService.getArrayOfSearchedImgs(searchinput).subscribe(posts => this.posts = posts);
+      this.postService.getArrayOfSearchedImgs(searchinput).subscribe(posts => this.posts = posts);
     }
   }
 

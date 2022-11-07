@@ -30,6 +30,8 @@
                 //El percentaje es respecto al bloque que contiene el elemeto. (Seria el 100% de la altura de dicho bloque).
     
     z-index: 0; //Establece el orden de pronfundidad de un elemento. (menos valor menos profundo)
+
+    object-fit: cover;
 }
 
 .user-info-front {

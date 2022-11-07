@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { User } from 'src/app/Interfaces/User';
-import { ProfileService } from 'src/app/Service/profile.service';
+import { UserService } from 'src/app/Service/user.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -10,16 +10,17 @@ import { ProfileService } from 'src/app/Service/profile.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  user!: User;
+  user?: User;
 
-  constructor(private activatedRoute: ActivatedRoute, private profileService: ProfileService) { }
+  constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
     const username = this.activatedRoute.snapshot.paramMap.get('username');
     if (username) {
-      this.user = this.profileService.getUserById(username);
+      console.log(username + ' xd');
+      this.userService.getUserByUsername(username).subscribe(user => {this.user = user; console.log(this.user + 'algo')});
     }else{
-      this.user = this.profileService.getUserById('pepe');
+      console.log('que raro');
     }
   }
 

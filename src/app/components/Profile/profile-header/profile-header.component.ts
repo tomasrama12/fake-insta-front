@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from 'src/app/Interfaces/User';
-import { ProfileService } from 'src/app/Service/profile.service';
+import { UserService } from 'src/app/Service/user.service';
 
 @Component({
   selector: 'app-profile-header',
@@ -16,13 +16,14 @@ export class ProfileHeaderComponent implements OnInit {
     return this.isFollowed ? 'Follow' : 'Unfollow';
   }
 
-  constructor(private profileService: ProfileService) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
   }
 
   updateFollowStatus() {
-    this.isFollowed = this.profileService.updateFollowStatus(this.user.username, this.user.username);
+    this.isFollowed = this.userService.updateFollowStatus(this.user.username, this.user.username);
   }
 
+  
 }

@@ -1,7 +1,7 @@
-<div class="post-image-cropper">
+<div class="post-image-cropper" *ngIf="user">
     <img class="fi-post-image" src="{{image.url}}" alt="{{image.altText}}" (click)="openImage()">
 </div>
-<app-full-size-image #hiddenElement [image]="image" [user]="user"></app-full-size-image>
+<app-full-size-image #hiddenElement [image]="image" [user]="user" *ngIf="user"></app-full-size-image>
 
 
 <!-- 
