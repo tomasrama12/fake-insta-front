@@ -15,10 +15,10 @@ export class ProfilePageComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
-    const username = this.activatedRoute.snapshot.paramMap.get('username');
+    const username = this.activatedRoute.snapshot.paramMap.get('id');
     if (username) {
       console.log(username + ' xd');
-      this.userService.getUserByUsername(username).subscribe(user => {this.user = user; console.log(this.user + 'algo')});
+      this.userService.getUserById(username).subscribe(user => {this.user = user; console.log(this.user + 'algo')});
     }else{
       console.log('que raro');
     }

@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'chats/:currentUserId', component: ChatsPreviewComponent},
   {path: 'profile', component: ProfilePageComponent},
   {path: 'search', component: SearchPageComponent},
-  {path: 'profile/:username', component: ProfilePageComponent}
+  {path: 'profile/:id', component: ProfilePageComponent}
 ];
 
 @NgModule({

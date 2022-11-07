@@ -12,7 +12,7 @@ export class UserService {
 
   mockFollow: boolean = true;
 
-  private usersUrl = 'api/users';
+  private usersUrl = 'http://localhost:3000/api/v1/users';
 
   getUsers(){
     return this.http.get<User[]>(this.usersUrl);

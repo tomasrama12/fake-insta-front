@@ -1,6 +1,11 @@
 <div class="mx-3">
     <app-section-heading [classes]="'pt-5 pb-4 mb-2'" [text]="'Subir foto'"></app-section-heading>
     <div class="mt-2">
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile01" #imageInput (change)="processFile(imageInput)">
+        </div>
+        
+        <img *ngIf="selectedFile" [src]="selectedFile.src" alt="">
         <app-upload-page-button></app-upload-page-button>
     </div>
     <app-upload-decription-bar></app-upload-decription-bar>
